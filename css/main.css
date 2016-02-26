@@ -76,6 +76,14 @@ p{
 		background-size: contain;
 		min-height:500px;
 	}
+	.titlebox{
+		text-align: center;
+	}
+	.mainHeader{
+		margin-top: 20px;	
+		font-size: 3em;
+		color:#FEF3D2;
+	}
 	.mainHeadline{
 		font-size: 3em;
 		background-color:#4FB4C7;
@@ -177,7 +185,7 @@ p{
 	}
 	.crowdContainer{
 		position: relative;
-		height:366px;
+		/*height:366px;*/
 	}
 	#handCrowd0{
 	
@@ -191,7 +199,7 @@ p{
 		FOOTER 
 	--------------- */
 	footer{
-		min-height: 300px;
+		min-height: 75px;
 		background-color: #E74F25;
 	}
 }
@@ -239,7 +247,7 @@ p{
 	.cloud0{
 		display: block;
 		width: 354px;
-		margin-top:5%;;
+		margin-top:2%;;
 		animation-name: cloud0move;
 		animation-duration: 15s;
 		animation-iteration-count: 1;
@@ -303,12 +311,13 @@ p{
 		6TH AREA 
 	--------------- */
 	.crowdContainer{
+		padding-top: 46px;
 		-webkit-mask: url(../images/handCrowdMask.png) center top no-repeat;
     	-webkit-mask-size: cover;
 	}
 	@keyframes handWave{
-		from {top:81px;}
-    	to {margin-top:203px;}
+		from {top:150px;}
+    	to {top:203px;}
 	}
 	#handCrowd1{
 		animation-name: handWave;
