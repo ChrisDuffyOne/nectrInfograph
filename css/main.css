@@ -165,7 +165,34 @@ p{
 	--------------- */
 	.sixArea{
 		background-color:#FFCF00;
-		min-height:638px;
+		text-align: center;
+	}
+	.finalLemonStand{
+		margin-top: 45px;
+		width:21%;
+	}
+	.custCrowd{
+		width:100%;
+		opacity:1;
+	}
+	.crowdContainer{
+		position: relative;
+		height:366px;
+	}
+	#handCrowd0{
+	
+	}
+	#handCrowd1{
+		position: absolute;
+		top: 77px;
+		left: 0px;
+	}
+	/* ---------------
+		FOOTER 
+	--------------- */
+	footer{
+		min-height: 300px;
+		background-color: #E74F25;
 	}
 }
 /* /// MD SCREEN SIZE /// */
@@ -271,5 +298,28 @@ p{
 	--------------- */
 	.info5{
 		margin-top:290px;
+	}
+	/* ---------------
+		6TH AREA 
+	--------------- */
+	.crowdContainer{
+		-webkit-mask: url(../images/handCrowdMask.png) center top no-repeat;
+    	-webkit-mask-size: cover;
+	}
+	@keyframes handWave{
+		from {top:81px;}
+    	to {margin-top:203px;}
+	}
+	#handCrowd1{
+		animation-name: handWave;
+		animation-duration: 1.25s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	}
+	/* ---------------
+		FOOTER
+	--------------- */
+	footer{
+		background-color:#e94f24;
 	}
 }
