@@ -61,7 +61,96 @@ p{
 }
 /* /// XS SCREEN SIZE /// */
 @media only screen and (min-width: 0px) {
-
+	/* ---------------
+		1ST AREA 
+	--------------- */
+	.firstAreaXs{	
+		background-color:#FECF09;
+		background-image: url('../images/xs/blueGrd.png');
+		background-repeat: no-repeat;
+		background-position: center bottom;
+		background-size: contain;
+	}
+	.xsLemonStand{
+		padding-bottom: 40px;
+		width: 100%;
+	}
+	.titlebox{
+		text-align: center;
+	}
+	.mainHeader{
+		margin-top: 20px;	
+		font-size: 3em;
+		color:#FEF3D2;
+	}
+	/* ---------------
+		2ND AREA 
+	--------------- */
+	.secondAreaXs{
+		/*text-align: center;*/
+		background-color: #c9effe;
+	}
+	.xsDonkey{
+		margin-bottom: 30px;
+	}
+	.xsDarkinfo{
+		margin-top: 20px;
+		text-align: center;
+		color:#852C1A;
+	}
+	.xsDarkp{
+		color: #852800;
+		margin-bottom: 40px;
+	}
+	/* ---------------
+		3RD AREA 
+	--------------- */
+	.thirdAreaXspt1{
+		background-color:#c9effe;
+		background-image: url('../images/xs/cityScapeXs.png');
+		background-repeat: no-repeat;
+		background-position: center bottom;
+		background-size: cover;
+	}
+	.thirdHeaderXs{
+		text-align: center;
+		margin-top: 150px;
+	}
+	.thirdAreaXspt2{
+		padding-top: 30px;
+		background-color:#CBC9CC;
+	}
+	/* ---------------
+		4TH AREA 
+	--------------- */
+	.fourthAreaXs{
+		padding-top: 20px;
+		background-color:#E74F25;
+		color: #FEF3D2;
+	}
+	.fourthAreaXs h1{
+		text-align: center;
+	}
+	.fourthAreaXs p{
+		padding-top: 40px;
+		margin-bottom: 40px;
+	}
+	/* ---------------
+		5TH AREA 
+	--------------- */
+	.fiveAreaXs{
+		padding-top: 20px;
+		background-color:#26444F;
+		color:#FEF3D2;
+	}
+	.fiveHeader{
+		text-align: center;
+		margin-bottom: 0px;
+	}
+	.fiveAreaXs p{
+		margin-top: 40px;
+		margin-bottom: 50px;
+	}
 }
 /* /// SM SCREEN SIZE /// */
 @media only screen and (min-width: 768px) {
@@ -315,6 +404,18 @@ p{
 		-webkit-mask: url(../images/handCrowdMask.png) center top no-repeat;
     	-webkit-mask-size: cover;
 	}
+	/*handCrowd1 css animation*/
+	@keyframes handRock{
+		from {transform: rotate(-2deg);}
+		to {transform: rotate(2deg);}
+	}
+	#handCrowd0{
+		animation-name: handRock;
+		animation-duration: 1.25s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	}
+	/*handCrowd1 css animation*/
 	@keyframes handWave{
 		from {top:150px;}
     	to {top:203px;}
@@ -325,6 +426,7 @@ p{
 		animation-iteration-count: infinite;
 		animation-direction: alternate;
 	}
+
 	/* ---------------
 		FOOTER
 	--------------- */
